@@ -17,3 +17,20 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+class MyHomePage extends StatelessWidget {
+  final List dummyList = List.generate(1000, (index) {
+    return {
+      "id": index,
+      "title": "Isso é um titulo $index",
+      "subtitle": "Isso é um subtitle $index"
+    };
+  });
+
+  MyHomePage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(Object context) {
+    throw UnimplementedError();
+  }
+}
